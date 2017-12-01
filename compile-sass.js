@@ -5,7 +5,6 @@
 (() => {
     var ArgumentParser = require('argparse').ArgumentParser,
         sass = require('node-sass'),
-        fs = require('fs'),
         parser = new ArgumentParser({
             addHelp: true,
             description: 'SASS-To-CSS compiler based on node-sass library',
@@ -38,6 +37,7 @@
         outFile: args.out,
         outputStyle: args.compressed ? 'compressed' : 'nested'
     }, (error, result) => {
+        var fs = require('fs');
         if (error) {
             throw error;
         }
