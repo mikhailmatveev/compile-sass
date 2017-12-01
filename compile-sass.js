@@ -7,7 +7,7 @@
         sass = require('node-sass'),
         parser = new ArgumentParser({
             addHelp: true,
-            description: 'SASS-To-CSS compiler based on node-sass library',
+            description: 'SASS-to-CSS compilation script using node-sass library',
             version: '1.0.0'
         }),
         data = [],
