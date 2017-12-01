@@ -7,7 +7,7 @@ SASS-To-CSS compiler based on node-sass library
 
 ## Usage
 
-``` nodejs compile-sass.js -h ```
+``` $ nodejs compile-sass.js -h ```
 
 ## Example
 
