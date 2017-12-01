@@ -1,10 +1,16 @@
 {
-  "name": "sass",
+  "name": "compile-sass",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "description": "SASS-to-CSS compilation script using node-sass library",
+  "keywords": ["css", "node-sass", "sass", "scss"],
+  "main": "compile-sass.js",
+  "author": "Mikhail Matveev",
+  "email": "mikhailmatveev.tmb@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikhailmatveev/compile-sass"
+  },
+  "license": "MIT",
   "devDependencies": {
     "argparse": "^1.0.9",
     "node-sass": "^4.7.2"
