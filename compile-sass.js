@@ -10,9 +10,9 @@
             description: 'SASS-To-CSS compiler based on node-sass library',
             version: '1.0.0'
         }),
+        data = [],
         args,
-        out,
-        s;
+        out;
     parser.addArgument(['*'], { help: '.scss input files to build', nargs: '*' });
     parser.addArgument(['-o', '--out'], { help: '.css output file' });
     parser.addArgument(['-i', '--include-path'], { help: 'Path to .scss input files' });
@@ -27,13 +27,12 @@
         throw new Error('.css out file is required');
     }
     // content
-    s = '';
     args['*'].forEach((src) => {
-        s += ['@import "', args.include_path ? args.include_path + '/' + src : src, '";\n'].join('');
+        data.push(`@import "${args.include_path ? args.include_path + '/' + src : src}";`);
     });
     // render content
     sass.render({
-        data: s,
+        data: data.join(''),
         outFile: args.out,
         outputStyle: args.compressed ? 'compressed' : 'nested'
     }, (error, result) => {
