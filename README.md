@@ -1,5 +1,5 @@
 # compile-sass
-SASS-To-CSS compiler based on node-sass library
+SASS-to-CSS compiler based on node-sass library
 
 ## Installation
 
