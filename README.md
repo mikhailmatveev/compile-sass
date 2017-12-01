@@ -3,7 +3,10 @@ SASS-to-CSS compiler based on node-sass library
 
 ## Installation
 
-``` $ npm install ```
+```
+$ git clone https://github.com/mikhailmatveev/compile-sass.git
+$ npm install
+```
 
 ## Usage
 
