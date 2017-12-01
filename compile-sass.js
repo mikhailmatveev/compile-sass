@@ -28,7 +28,7 @@
         throw new Error('.css out file is required');
     }
     // content
-    s = ['/*!\n * ', new Date(), '\n */\n\n'].join('');
+    s = '';
     args['*'].forEach((src) => {
         s += ['@import "', args.include_path ? args.include_path + '/' + src : src, '";\n'].join('');
     });
